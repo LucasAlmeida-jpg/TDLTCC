@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #61dafb;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  /* background: #61dafb; */
+  /* margin-top: 5rem; */
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #61dafb;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #61dafb;
+
+}
+
+.todo-input::placeholder {
+  color: #61dafb;
+
+}
+
+.logo-react {
+  width: 90px;
+  margin-bottom: 12px;
+}
+
+/* Estilo para o modal */
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Background semi-transparente */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.todo-btn {
+  background: #61dafb;
+  padding: 13px 30px !important;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.55rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button-inverted {
+  background: white;
+  padding: 13px 30px !important;
+  color: #61dafb;
+  border: none;
+  border-radius: 10px;
+  padding: 0.55rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.todo-btn-select {
+  background: white;
+  padding: 17px !important;
+  color: #61dafb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px;
+  max-width: 174px;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #61dafb;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.completed {
+  color: #61dafb;
+  text-decoration: line-through;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #61dafb;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  min-width: 30%;
+}
+
+.modal-content input,
+select {
+  border: none;
+  width: 90%;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+.modal-close-button {
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+}
