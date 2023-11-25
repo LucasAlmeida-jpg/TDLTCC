@@ -175,8 +175,8 @@ export const TodoWrapper = () => {
               />
             </div>
             <div className="buttons-container" style={{ display: "flex", justifyContent: "space-between" }}>
-              <button className="button-inverted" onClick={addTodo}>Adicionar</button>
-              <button className="button-inverted" onClick={() => setIsModalOpen(false)}>Cancelar</button>
+              <button className="button-inverted-add" onClick={addTodo}>Adicionar</button>
+              <button className="button-inverted-add" onClick={() => setIsModalOpen(false)}>Cancelar</button>
             </div>
           </div>
         </div>
