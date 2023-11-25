@@ -4,6 +4,9 @@ const Sidebar = ({ isOpen, openModal, filterTodos }) => {
   return (
     <div className="sidebar" style={{ width: isOpen ? "450px" : "0", color: "white", background: "#61dafb", height: "100%", position: "fixed", top: "0", right: "0", overflowX: "hidden", transition: "0.5s", padding: "50px 0px" }}>
       <div>
+        <h2 style={{marginBottom: "50px"}}>Filtros</h2>
+      </div>
+      <div>
         <button className="button-inverted" onClick={openModal}>
           Adicionar tarefas na lista
         </button>
